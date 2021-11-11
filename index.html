@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ten Hundred Fanpage</title>
+  </head>
+  <style>
+    a{
+      text-decoration: none;
+      color: #645CC3;
+      font-size: 13px;
+      display: inline-block;
+    }
+    a:hover{
+      text-decoration: underline;
+      color: #1D0D5E;
+    }
+  
+    body {
+      background: linear-gradient(
+        91.9deg,
+        rgb(93, 248, 219) 27.8%,
+        rgb(33, 228, 246) 67%
+      );
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0 auto;
+      max-width: 650px;
+      text-align: center;
+    }
+    button {
+      background-color: #F95172;
+      font-size: 15px;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 15px;
+      border: solid 1px #F95172;
+      margin:20px;
+      box-shadow: 5px 5px 10px #888888;
+    }
+    button:hover{
+      cursor: pointer;
+      background-color:#F95172;
+      color: white;
+      opacity: 0.7;
+      border: 2px #F95172 solid;
+      transition: all 200ms ease-in-out;
+
+    }
+    .header {
+      background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/013/249/original/1muraltenhun.png?1626626865");
+      color: white;
+      max-width: 900px;
+      padding: 20px;
+      border: solid 5px darkslategray;
+    }
+    .peter {
+      display: block;
+      float: right;
+      margin: 0 auto;
+      border-radius: 15px;
+      padding: 10px 5px 0 px 5px;
+      border:darkslategray 5 px solid;
+    }
+    img {
+      margin: 0 auto;
+      max-width: 300px;
+      padding: 10px;
+    }
+    p {
+      background-color: white;
+      font-size: 12px;
+      line-height: 1.5;
+      padding: 20px;
+      font-weight: lighter;
+    }
+
+    
+    .wolf {
+      max-width: 220px;
+    }
+    .lunchbox {
+      max-width: 210px;
+    }
+    .artwork{
+      display: inline-block;
+    }
+    footer{
+      font-size: 13px;
+      color: black;
+      font-family:'Courier New', Courier, monospace;
+      padding:15px 20px;
+    }
+    .bio {
+      background-color:white;
+      }
+    
+  </style>
+  <body>
+    <div class="header">
+      <h1>TEN HUNDRED</h1>
+      <h2>
+        <strong>Artist</strong>, Designer,<em
+          >Creator of Colorful New Worlds</em
+        >
+      </h2>
+    </div>
+    <div class="bio">
+      <img
+        class="peter"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/012/883/original/peterr.jpeg?1626199297"
+        alt="Artist Peter Robinson smiling"
+      />
+      <p>
+        Ten Hundred (Peter Robinson) is an artist from Seattle, WA. He was born
+        and raised in Michigan. <br />
+        He specializes in bright, colorful,imaginative character work. He has
+        shown work in Seattle, Portland, Denver and Los Angeles. He has murals
+        in Seattle, New York City, Los Angeles, Kansas City, Tokyo Japan and
+        Buzios Brazil.<br />
+        He is inspired by cartoons and anime, street art and graffiti, childlike
+        imagination, comics, world cultures, religions, and folklore. He spends
+        his time creating fine art, YouTube videos, clothing, toys and
+        figurines, designing art for businesses, and creating large murals all
+        around the world.
+      </p>
+      <hr />
+      <div class="artwork">
+        <img
+          class="wolf"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/013/239/original/Escaped_Animals_11x17.jpeg?1626624559"
+        />
+
+        <img
+          class="mega"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/013/251/original/Ultra-Mega-Poster-.jpeg?1626628238"
+        />
+        <img
+          class="lunchbox"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/013/240/original/tenhunlunchbox.jpeg?1626624981"
+        />
+      
+      <a
+        href="https://www.youtube.com/channel/UCh-ArhaGOqFsBPrR2yQd42w"
+        target="_blank"
+        >For more cool art, be sure to check out Ten Hundred's <span style="font-weight:bold">Youtube Channel</span>!</a>
+      <br/>
+      <button class>Join The Club</button>
+    </div>
+    <br>
+    <footer> 
+    Coded by Christina Izquierdo 
+    </footer>
+
+  <script> 
+  function joinClub(){
+    let emailUpdates= prompt("Do you want to stay updated with all things Ten Hundred?");{
+    if (emailUpdates=== "Yes" || emailUpdates=== "yes"){
+    let firstName= prompt("What is your first name?");
+    let email= prompt("What is your email address?");
+    alert("Welcome to the Ten Hundred Fan Club "+ firstName+"!");
+    } else {
+      alert("Bummer, maybe next time!")
+    }
+    }
+  
+  }
+    let joinClubButton = document.querySelector("button");
+   
+    joinClubButton.addEventListener("click",joinClub);
+   </script>
+  </body>
+</html>
